@@ -1,0 +1,55 @@
+import csv
+import os
+import pandas as pd
+
+
+import argparse
+
+parser = argparse.ArgumentParser()
+
+parser.add_argument('--my_path', type=str, default='/projects/data/kinetics_dataset/k400/annotations')
+parser.add_argument('--kinetics_path',type=str,default='/projects/videomaev2/datas/dgx/finetune/k400/')
+parser.add_argument('--data_path',type=str,default='/projects/data/kinetics_dataset/k400/')
+parser.add_argument('--print_paths',action = 'store_true')
+opt = parser.parse_args()
+
+my_path = opt.my_path
+kinetics_path = opt.kinetics_path
+os.makedirs(kinetics_path,exist_ok=True)
+data_path = opt.data_path
+print_paths = opt.print_paths
+print('print_path:',print_paths)
+label_id = pd.read_csv(os.path.join(my_path,'kinetics_400_labels.csv'),usecols=['id','name'])
+label2id ={}
+for index, row in label_id.iterrows():
+    label2id[row['name']] = row['id']
+    #label2id[name] = id
+
+#my_path = '/projects/data/kinetics_dataset/k400/'
+for i in ['train.csv','test.csv','val.csv']:
+#for i in ['test.csv']:
+    print('i:',i)
+    rows = []
+    with open(os.path.join(kinetics_path,i),'w',newline ='') as file_write:
+        writer = csv.writer(file_write)
+        data = pd.read_csv(os.path.join(my_path,i),usecols=['label','youtube_id','time_start','time_end'])
+        for index, row in data.iterrows():
+            #print(row['label'], row['youtube_id'], type(row['time_start']),type(row['time_end']))
+            assert row['time_start']< row['time_end']
+            #print(row['youtube_id'] + '_'+ '0'*(6-len(str(row['time_start'])))+str(row['time_start']) + '_'+ '0'*(6-len(str(row['time_end'])))+str(row['time_end'])  + '.mp4')  
+            video_path = row['youtube_id'] + '_'+ '0'*(6-len(str(row['time_start'])))+str(row['time_start']) + '_'+ '0'*(6-len(str(row['time_end'])))+str(row['time_end'])  + '.mp4'
+            label = label2id[row['label']]
+
+            #print(video_path,label)
+
+            #path, label = path_label.split()
+            path = os.path.join(data_path,i.split('.')[0],video_path)
+            #print(path,label)
+            if print_paths:
+                print(path,label)
+
+            if os.path.exists(path):
+                if print_paths:
+                    print('exitst:',path,label)
+
+                writer.writerow([path+' '+str(label)])

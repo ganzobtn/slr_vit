@@ -22,10 +22,10 @@
 ## Performance and Checkpoints
 | Dataset | P-I Top1 | P-I Top5 | P-C Top1 | P-C Top5 | Ckpt | Training |
 | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
-| WLASL-2000 | 62.82 | 92.88 | 60.01 | 92.2 | [GDrive](https://) | [config](configs/a.yaml) |
-| WLASL-1000 | 75.64 | 94.62 | 75.72 | 94.65 | [GDrive]() | [config](configs/nla_slr_wlasl_1000.yaml) |
-| WLASL-300 | 86.98 | 97.60 | 87.33 | 97.81 | [GDrive]() | [config](configs/nla_slr_wlasl_300.yaml) |
-| WLASL-100 | 92.64 | 96.90 | 93.08 | 97.17 | [GDrive]() | [config](configs/nla_slr_wlasl_100.yaml) |
+| WLASL-2000 | 62.82 | 92.88 | 60.01 | 92.2 | [GDrive](https://) | [script](videomaev2/scripts/finetune/distribute/test/wlasl_2000/vit_b_32_wlasl_2000_ft_dgx_from_asl_citizen_3crop.sh) |
+| WLASL-1000 | 75.16 | 95.79 | 75.27 | 95.85 | [GDrive]() | [script](configs/nla_slr_wlasl_1000.yaml) |
+| WLASL-300 | 87.28 | 97.75 |  87.74 | 97.81 | [GDrive]() | [script](configs/nla_slr_wlasl_300.yaml) |
+| WLASL-100 | 90.31 | 97.67 | 90.25 | 97.58 | [GDrive]() | [script](configs/nla_slr_wlasl_100.yaml) |
 
 More checkpoints are available at [GDrive]()
 
@@ -43,34 +43,24 @@ pip install -r requirements.txt
 
 ### Data Preparation
 
-**SLR Datasets**
+We use two datasets: [WLASL](https://dxli94.github.io/WLASL/) and [ASL-Citizen](https://www.microsoft.com/en-us/research/project/asl-citizen/)
 
-We use two datasets: [WLASL]() and [ASLCitizen]()
+Alternative labelling of WLASL dataset can be downloaded from [here](https://dai.cs.rutgers.edu/dai/s/signbank).
+
+Our new proposed WLASL benchmark with 1518 and 1573 classes labelling can be downloaded from [here](https://)
 
 **VideoMAEv2 pretrained model**
 
-Download VideoMAEv2 checkpoints from [here]()
+Download VideoMAEv2 checkpoints from [here](https://github.com/OpenGVLab/VideoMAEv2/blob/master/docs/MODEL_ZOO.md)
 <hr>
 
 ### Training
-```
-config_file='configs/.yaml'
-python -m torch.distributed.launch 
-```
 
-
+The training instruction is in [FINETUNE.md](docs/FINETUNE.md).
 
 ### Testing
-```
-config_file='configs/.yaml'
-python -m torch.distributed.launch 
-```
-3 crop inference yield better results:
-```
-config_file='configs/.yaml'
-python -m torch.distributed.launch 
-```
 
+The testing instruction is in [TEST.md](docs/TEST.md)
 ## Citation
 
 
