@@ -56,11 +56,11 @@ Download VideoMAEv2 checkpoints from [here](https://github.com/OpenGVLab/VideoMA
 
 ### Training
 
-The training instruction is in [FINETUNE.md](docs/FINETUNE.md).
+The training instruction is in [FINETUNE.md](videomaev2/docs/FINETUNE.md).
 
 ### Testing
 
-The testing instruction is in [TEST.md](docs/TEST.md)
+The testing instruction is in [TEST.md](videomaev2/docs/TEST.md)
 ## Citation
 
 
