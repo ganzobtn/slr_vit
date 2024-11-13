@@ -12,7 +12,6 @@
 >
 <hr>
 
-[![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/natural-language-assisted-sign-language/sign-language-recognition-on-wlasl-2000)](https://paperswithcode.com/sota/sign-language-recognition-on-wlasl-2000?p=natural-language-assisted-sign-language)<br>
 
 #
 ![flowchart](assets/Proposed_method.png)
