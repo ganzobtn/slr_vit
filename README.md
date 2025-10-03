@@ -58,6 +58,7 @@ Download VideoMAEv2 checkpoints from [here](https://github.com/OpenGVLab/VideoMA
 The training instruction is in [FINETUNE.md](videomaev2/docs/FINETUNE.md).
 
 ## Citation
+G. Batnasan, M.-E. Otgonbold, Q. Ali Memon, T. K. Shih, and M. Gochoo, “Head and Hands Tunneling Pipeline for Enhancing Sign Language Recognition,” IEEE Access, vol. 13, pp. 127926–127940, 2025.
 
 
 ## Contact
