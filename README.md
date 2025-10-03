@@ -1,7 +1,7 @@
 # Head and Hands Tunneling Pipeline for Enhancing Sign Language Recognition
 
 
-[Ganzorig Batnasan](https://github.com/ganzobtn), [Munkh-Erdene Otgonbold](https://scholar.google.com/citations?user=K_JCmqgAAAAJ&hl=en) [Timothy K. Shih](https://scholar.google.com/citations?hl=en&user=OySZ3UwAAAAJ), and [Munkhjargal Gochoo](https://github.com/MoyoG).
+[Ganzorig Batnasan](https://github.com/ganzobtn), [Munkh-Erdene Otgonbold](https://scholar.google.com/citations?user=K_JCmqgAAAAJ&hl=en) [Timothy K. Shih](https://scholar.google.com/citations?hl=en&user=OySZ3UwAAAAJ), Qurban Ali Memom, and [Munkhjargal Gochoo](https://github.com/MoyoG).
 
 
 #
