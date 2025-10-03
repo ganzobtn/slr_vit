@@ -1,7 +1,7 @@
-# SignNet: Vision Transformer-Based Isolated Sign Language Recognition with A Novel Head & Hands Tunnelling Preprocessing Method
+# Vision Transformer-Based Isolated Sign Language Recognition with A Novel Head & Hands Tunnelling Preprocessing Method
 
 
-[Ganzorig Batnasan](https://github.com/ganzobtn), [Hanan Aldarmaki](https://scholar.google.com/citations?user=U8JSlxcAAAAJ&hl=en), [Munkh-Erdene Otgonbold](https://scholar.google.com/citations?user=K_JCmqgAAAAJ&hl=en) [Timothy K. Shih](https://scholar.google.com/citations?hl=en&user=OySZ3UwAAAAJ), [Fady Alnajjar](https://scholar.google.com/citations?hl=en&user=OySZ3UwAAAAJ), [Qurban Ali Memon](https://scholar.google.com/citations?hl=en&user=32Y9SB0AAAAJ), [Gantumur Tsogtgerel](https://www.math.mcgill.ca/gantumur/), [Enkhbat Tsedenbaljir](https://scholar.google.com/citations?hl=en&user=NMPJAZIAAAAJ), Tan-Hsu Tan and [Munkhjargal Gochoo](https://github.com/MoyoG).
+[Ganzorig Batnasan](https://github.com/ganzobtn), [Munkh-Erdene Otgonbold](https://scholar.google.com/citations?user=K_JCmqgAAAAJ&hl=en) [Timothy K. Shih](https://scholar.google.com/citations?hl=en&user=OySZ3UwAAAAJ), and [Munkhjargal Gochoo](https://github.com/MoyoG).
 
 
 #
